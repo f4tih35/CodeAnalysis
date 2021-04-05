@@ -10,7 +10,7 @@ namespace CodeAnalysis
         static void Main(string[] args)
         {
             
-            var text = System.IO.File.ReadAllText(@"Code.txt");
+            var text = System.IO.File.ReadAllText(@"File/Code.cs");
             Console.WriteLine(text);
             var tree = CSharpSyntaxTree.ParseText(text);
             var root = tree.GetRoot();
